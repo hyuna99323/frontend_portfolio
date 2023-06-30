@@ -1,0 +1,338 @@
+@import "../variable";
+@import "../mixin";
+
+#projectBox {
+  @include sectionBasic;
+  
+  & h3 {
+    @include h3;
+    @include mobile {
+      @include h3_m;
+    }
+    @include tablet {
+      font-size: map-get($map: $font_size_m, $key: title);
+    }
+    @include pcfull {
+      font-size: map-get($map: $font_size_pcFull, $key: title);
+    }
+  }
+  
+  & .project_inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    // @include mobile {
+    //   display: none;
+    // }
+    
+    & .project_text {
+      width: 56%;
+      text-align: left;
+      transform: matrix(1, 0, 0, 1, 30, 0);
+
+      @include mobile {
+        width: 100%;
+        margin: 10px auto;
+      }
+      @include pcfull {
+        margin: auto 0;
+      }
+      
+      &.project {
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.5s;
+      }
+      
+      & p {
+        width: 100%;
+        height: auto;
+      }
+      :nth-child(1) {
+        font-size: map-get($map: $font_size, $key: pointtitle);
+        font-weight: $font_weight_bold;
+        letter-spacing: map-get($map: $letter-spacing, $key: content);
+
+        @include mobile {
+          font-size: map-get($map: $font_size_m, $key: pointtitle);
+        }
+        @include tablet {
+          font-size: map-get($map: $font_size_m, $key: pointtitle);
+        }
+        @include pcfull {
+          font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
+        }
+      }
+      :nth-child(2) {
+        line-height: 24px;
+        font-size: map-get($map: $font_size, $key: content1);
+        font-weight: $font_weight_thin;
+        letter-spacing: map-get($map: $letter-spacing, $key: content);
+
+        @include mobile {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+        @include tablet {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+        @include pcfull {
+          font-size: map-get($map: $font_size_pcFull, $key: content1);
+        }
+      }
+      :nth-child(3) {
+        margin-top: 15px;
+        font-size: map-get($map: $font_size, $key: content1);
+        font-weight: $font_weight_thin;
+        letter-spacing: map-get($map: $letter-spacing, $key: content_kr);
+
+        @include mobile {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+        @include tablet {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+        @include pcfull {
+          font-size: map-get($map: $font_size_pcFull, $key: content1);
+        }
+      }
+    }
+    & button {
+      width: 86px;
+      height: 30px;
+      margin-top: 40px;
+      font-size: map-get($map: $font_size, $key: content1);
+      font-weight: $font_weight_normal;
+      color: $color_white;
+      border-radius: 20px;
+      background-color: $color_point_blue;
+
+      @include mobile {
+        position: relative;
+        left: 13%;
+        margin-top: 10px;
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+      @include tablet {
+        margin-top: 10px;
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+      @include pcfull {
+        font-size: map-get($map: $font_size_pcFull, $key: content1);
+      }
+      
+      &:hover {
+        color: $color_black;
+        background-color: $color_white;
+        border: $line3;
+      }
+    }
+  }
+  & .ohou {
+    @include project_flex;
+    margin-top: 0;
+
+    @include mobile {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    @include tablet {
+      height: 27vh;
+      padding: 0;
+    }
+    @include pcfull {
+      height: 40vh;
+    }
+    
+    & .device_img {
+      @include device_img;
+      @include img(nth($projectImg, 1));
+      transform: matrix(1,0,0,1,-200,0);
+      
+      @include mobile {
+        width: 100%;
+        height: 35vh;
+        margin-right: 0;
+      }
+      
+      &.project {
+        opacity: 0;
+        text-align: center;
+        transition: all 1s;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+    }
+  }
+  & .ediya {
+    @include project_flex;
+
+    @include mobile {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    @include tablet {
+      height: 27vh;
+      margin-top: 50px;
+      padding: 0;
+    }
+    @include pcfull {
+      height: 40vh;
+    }
+    
+    & .device_img {
+      @include device_img;
+      @include img(nth($projectImg, 2));
+      transform: matrix(1,0,0,1,-200,0);
+
+      @include mobile {
+        width: 100%;
+        height: 35vh;
+        margin-right: 0;
+      }
+      
+      &.project {
+        opacity: 0;
+        text-align: center;
+        transition: all 1s;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+    }
+  }
+  & .portfolio1 {
+    @include project_flex;
+
+    @include mobile {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    @include tablet {
+      height: 27vh;
+      margin-top: 50px;
+      padding: 0;
+    }
+    @include pcfull {
+      height: 40vh;
+    }
+    
+    & .device_img {
+      @include device_img;
+      @include img(nth($projectImg, 3));
+      transform: matrix(1,0,0,1,-200,0);
+
+      @include mobile {
+        width: 100%;
+        height: 35vh;
+        margin-right: 0;
+      }
+      
+      &.project {
+        opacity: 0;
+        text-align: center;
+        transition: all 1s;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+    }
+  }
+  & .interactive {
+    display: none !important;
+    @include project_flex;
+
+    @include mobile {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    @include tablet {
+      height: 27vh;
+      margin-top: 50px;
+      padding: 0;
+    }
+    @include pcfull {
+      height: 40vh;
+    }
+    
+    & .device_img {
+      width: 27.756%;
+      height: 100%;
+      margin: auto;
+      margin-right: 146px;
+      @include img(nth($projectImg, 4));
+      transform: matrix(1,0,0,1,-200,0);
+
+      @include mobile {
+        width: 100%;
+        height: 35vh;
+        margin-right: 0;
+      }
+      
+      &.project {
+        opacity: 0;
+        text-align: center;
+        transition: all 1s;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+    }
+  }
+  & .portfolio2 {
+    @include project_flex;
+
+    @include mobile {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    @include tablet {
+      height: 27vh;
+      margin-top: 50px;
+      padding: 0;
+    }
+    @include pcfull {
+      height: 40vh;
+    }
+    
+    & .device_img {
+      @include device_img;
+      @include img(nth($projectImg, 5));
+      transform: matrix(1,0,0,1,-100,0);
+
+      @include mobile {
+        width: 100%;
+        height: 35vh;
+        margin-right: 0;
+      }
+      
+      &.project {
+        opacity: 0;
+        text-align: center;
+        transition: all 1s;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+    }
+  }
+}

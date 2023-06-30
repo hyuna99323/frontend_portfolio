@@ -1,0 +1,64 @@
+@import "../variable";
+@import "../mixin";
+
+#contactBox {
+  @include sectionBasic;
+  padding-bottom: 180px;
+
+  @include mobile {
+    padding-bottom: 110px;
+  }
+  
+  & .email_border::after {
+    content: '';
+    width: 0;
+    height: 126px;
+    margin: auto;
+    margin-bottom: 54px;
+    border: $line4;
+    align-items: center;
+    display: flex;
+  }
+  
+  & ul {
+    margin-bottom: 50px;
+    line-height: 35px;
+    
+    & li {
+      font-size: map-get($map: $font_size, $key: content1);
+      font-weight: $font_weight_normal;
+      text-align: center;
+
+      @include mobile {
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+      @include tablet {
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+      @include pcfull {
+        font-size: map-get($map: $font_size_pcFull, $key: content1);
+      }
+    }
+  }
+  & .email {
+    margin-top: 70px;
+    text-align: center;
+    
+    & a {
+      font-size: map-get($map: $font_size, $key: contactemail);
+      font-weight: $font_weight_bold;
+      letter-spacing: map-get($map: $letter-spacing, $key: content);
+      color: $color_point_blue;
+
+      @include mobile {
+        font-size: 18px;
+      }
+      @include tablet {
+        font-size: map-get($map: $font_size_m, $key: contactemail);
+      }
+      @include pcfull {
+        font-size: map-get($map: $font_size_pcFull, $key: contactemail);
+      }
+    }
+  }
+}

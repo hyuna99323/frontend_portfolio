@@ -1,0 +1,234 @@
+@import "../variable";
+@import "../mixin";
+
+#skillBox {
+  @include sectionBasic;
+  
+  & h3 {
+    @include h3;
+
+    @include mobile {
+      @include h3_m;
+    }
+    @include tablet {
+      font-size: map-get($map: $font_size_m, $key: title);
+    }
+    @include pcfull {
+      font-size: map-get($map: $font_size_pcFull, $key: title);
+    }
+  }
+  
+  & .charts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+    
+    & .chart {
+      width: 100%;
+      position: relative;
+
+      @include mobile {
+        width: 100%;
+      }
+      
+      & h4 {
+        font-size: map-get($map: $font_size, $key: content1);
+        position: absolute;
+        top: 113px;
+        left: 94px;
+        transform: translate(-50%, -50%);
+
+        @include mobile {
+          font-size: map-get($map: $font_size_m, $key: content1);
+          top: 81px;
+          left: 55px;
+        }
+        @include tablet {
+          font-size: map-get($map: $font_size_m, $key: content1);
+          top: 91px;
+          left: 57px;
+        }
+      }
+      
+      & .svg_img {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        top: 31px;
+        left: 62px;
+        
+        @include mobile {
+          width: 50px;
+          height: 50px;
+          top: 21px;
+          left: 30px;
+        }
+        @include tablet {
+          width: 50px;
+          height: 50px;
+          top: 30px;
+          left: 33px;
+        }
+      }
+      & svg {
+        width: 150px;
+        height: 150px;
+
+        @include mobile {
+          width: 110px;
+          height: 110px;
+        }
+        @include tablet {
+          width: 120px;
+          height: 120px;
+        }
+        
+        & circle {
+          fill: #dedede;
+          stroke-width: 20;
+          stroke-dasharray: 409;
+          stroke-dashoffset: 409;
+          animation: line 2s forwards;
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+          stroke-linecap: round;
+          cx: 75;
+          cy: 75;
+          r: 65;
+          
+          @include mobile {
+            stroke-width: 10;
+            stroke-dasharray: 315;
+            stroke-dashoffset: 315;
+            cx: 56; 
+            cy: 56;
+            r: 49;
+          }
+          @include tablet {
+            stroke-width: 10;
+            stroke-dasharray: 325;
+            stroke-dashoffset: 325;
+            cx: 60; 
+            cy: 60;
+            r: 50;
+          }
+        }
+      }
+    }
+    & .charts_inner1 {
+      width: 17%;
+      display: grid;
+      gap: 15px;
+
+      @include mobile {
+        width: 40%;
+        padding: 0 5px;
+      }
+      
+      & .chart:nth-child(1) circle {
+        stroke: $color_html;
+      }
+      & .chart:nth-child(2) circle {
+        stroke: $color_css;
+      }
+      & .chart:nth-child(3) circle {
+        stroke: $color_sass;
+      }
+      & .chart:nth-child(4) circle {
+        stroke: $color_javascript;
+      }
+    }
+    
+    & .chart_text1, .chart_text2 {
+      width: 33%;
+      display: grid;
+      gap: 15px;
+      text-align: left;
+
+      @include mobile {
+        width: 60%;
+      }
+      
+      & .chart_text {
+        margin: 20px;
+        line-height: 30px;
+
+        @include mobile {
+          margin: 10px;
+        }
+      }
+      
+      & p {
+        font-size: map-get($map: $font_size, $key: content1);
+        font-weight: $font_weight_thin;
+        letter-spacing: map-get($map: $letter-spacing, $key: content_kr);
+
+        @include mobile {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+        @include tablet {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+        @include pcfull {
+          font-size: map-get($map: $font_size_pcFull, $key: content1);
+        }
+      }
+      & p:nth-child(1) {
+        font-size: map-get($map: $font_size, $key: pointtitle);
+        font-weight: $font_weight_normal;
+        letter-spacing: map-get($map: $letter-spacing, $key: content_kr);
+        color: $color_point_blue;
+
+        @include mobile {
+          font-size: map-get($map: $font_size_m, $key: pointtitle);
+        }
+        @include tablet {
+          font-size: map-get($map: $font_size_m, $key: pointtitle);
+        }
+        @include pcfull {
+          font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
+        }
+      }
+    }
+    & .charts_inner2 {
+      width: 17%;
+      display: grid;
+      gap: 15px;
+
+      @include mobile {
+        width: 40%;
+        padding: 0 10px;
+      }
+      
+      & .chart:nth-child(1) circle {
+        stroke: $color_figma;
+      }
+      & .chart:nth-child(2) circle {
+        stroke: $color_react;
+      }
+      & .chart:nth-child(3) circle {
+        stroke: $color_github;
+      }
+    }
+    .chart_bin {
+      width: 78.95%;
+      height: 150px;
+
+      @include mobile {
+        height: 0;
+      }
+    }
+    .chart_text_bin {
+      height: 150px;
+      border: $line2;
+
+      @include mobile {
+        height: 0;
+      }
+    }
+  }
+}

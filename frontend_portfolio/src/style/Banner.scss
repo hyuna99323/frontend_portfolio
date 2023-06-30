@@ -1,0 +1,61 @@
+@import "../variable";
+@import "../mixin";
+
+#bannerBox {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+
+  @keyframes marquee {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-224%, 0, 0);
+      transform: translate3d(-224%, 0, 0);
+    }
+  }
+  
+  p {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    // -webkit-box-orient: vertical;
+    // -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    // -webkit-transition: -webkit-transform var(--d) var(--e);
+    // transition: -webkit-transform var(--d) var(--e);
+    // transition: transform var(--d) var(--e);
+    // transition: transform var(--d) var(--e),-webkit-transform var(--d) var(--e);
+    z-index: 1;
+    font-family: $font_family_en, $font_family_common;
+    font-size: map-get($map: $font_size, $key: banner);
+    font-weight: $font_weight_bolder;
+    text-transform: uppercase;
+    color: $color_white;
+    text-shadow: -3px 0 $color_point_blue, 0 3px $color_point_blue, 3px 0 $color_point_blue,
+    0 -3px $color_point_blue;
+    letter-spacing: map-get($map: $letter-spacing, $key: content);
+
+    @include mobile {
+      font-size: map-get($map: $font_size_m, $key: banner);
+    }
+    @include tablet {
+      font-size: map-get($map: $font_size_m, $key: banner);
+    }
+    
+    &:hover{
+      animation-play-state: paused;
+      cursor: default;
+    }
+  }
+}
