@@ -28,7 +28,7 @@
     & .project_text {
       width: 56%;
       text-align: left;
-      transform: matrix(1, 0, 0, 1, 30, 0);
+      // transform: matrix(1, 0, 0, 1, 30, 0);
 
       @include mobile {
         width: 100%;
@@ -39,7 +39,7 @@
       }
       
       &.project {
-        opacity: 0;
+        // opacity: 0;
         transition: all 0.5s;
       }
       &.visible {
@@ -104,6 +104,7 @@
       width: 86px;
       height: 30px;
       margin-top: 40px;
+      margin-right: 20px;
       font-size: map-get($map: $font_size, $key: content1);
       font-weight: $font_weight_normal;
       color: $color_white;
@@ -151,7 +152,7 @@
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 1));
-      transform: matrix(1,0,0,1,-200,0);
+      // transform: matrix(1,0,0,1,-200,0);
       
       @include mobile {
         width: 100%;
@@ -160,7 +161,7 @@
       }
       
       &.project {
-        opacity: 0;
+        // opacity: 0;
         text-align: center;
         transition: all 1s;
       }
@@ -191,7 +192,7 @@
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 2));
-      transform: matrix(1,0,0,1,-200,0);
+      // transform: matrix(1,0,0,1,-200,0);
 
       @include mobile {
         width: 100%;
@@ -200,7 +201,7 @@
       }
       
       &.project {
-        opacity: 0;
+        // opacity: 0;
         text-align: center;
         transition: all 1s;
       }
@@ -231,7 +232,7 @@
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 3));
-      transform: matrix(1,0,0,1,-200,0);
+      // transform: matrix(1,0,0,1,-200,0);
 
       @include mobile {
         width: 100%;
@@ -240,7 +241,7 @@
       }
       
       &.project {
-        opacity: 0;
+        // opacity: 0;
         text-align: center;
         transition: all 1s;
       }
@@ -275,7 +276,7 @@
       margin: auto;
       margin-right: 146px;
       @include img(nth($projectImg, 4));
-      transform: matrix(1,0,0,1,-200,0);
+      // transform: matrix(1,0,0,1,-200,0);
 
       @include mobile {
         width: 100%;
@@ -284,7 +285,7 @@
       }
       
       &.project {
-        opacity: 0;
+        // opacity: 0;
         text-align: center;
         transition: all 1s;
       }
@@ -315,7 +316,7 @@
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 5));
-      transform: matrix(1,0,0,1,-100,0);
+      // transform: matrix(1,0,0,1,-100,0);
 
       @include mobile {
         width: 100%;
@@ -324,7 +325,7 @@
       }
       
       &.project {
-        opacity: 0;
+        // opacity: 0;
         text-align: center;
         transition: all 1s;
       }

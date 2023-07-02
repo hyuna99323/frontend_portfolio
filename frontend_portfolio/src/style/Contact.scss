@@ -54,7 +54,7 @@
         font-size: 18px;
       }
       @include tablet {
-        font-size: map-get($map: $font_size_m, $key: contactemail);
+        font-size: map-get($map: $font_size_m, $key: pointContent2);
       }
       @include pcfull {
         font-size: map-get($map: $font_size_pcFull, $key: contactemail);

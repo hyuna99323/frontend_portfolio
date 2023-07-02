@@ -1,6 +1,7 @@
 import '../../style/Project.scss';
 
 export default function ProjectBox() {
+  
   return (
     <section id="projectBox">
       <h3>project</h3>

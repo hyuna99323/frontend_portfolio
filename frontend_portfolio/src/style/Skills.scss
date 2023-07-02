@@ -39,7 +39,7 @@
         font-size: map-get($map: $font_size, $key: content1);
         position: absolute;
         top: 113px;
-        left: 94px;
+        left: 92px;
         transform: translate(-50%, -50%);
 
         @include mobile {
@@ -50,7 +50,7 @@
         @include tablet {
           font-size: map-get($map: $font_size_m, $key: content1);
           top: 91px;
-          left: 57px;
+          left: 60px;
         }
       }
       
@@ -59,7 +59,7 @@
         height: 64px;
         position: absolute;
         top: 31px;
-        left: 62px;
+        left: 60px;
         
         @include mobile {
           width: 50px;
@@ -71,7 +71,7 @@
           width: 50px;
           height: 50px;
           top: 30px;
-          left: 33px;
+          left: 35px;
         }
       }
       & svg {
@@ -89,7 +89,7 @@
         
         & circle {
           fill: #dedede;
-          stroke-width: 20;
+          stroke-width: 15;
           stroke-dasharray: 409;
           stroke-dashoffset: 409;
           animation: line 2s forwards;
@@ -120,7 +120,7 @@
       }
     }
     & .charts_inner1 {
-      width: 17%;
+      width: 184px;
       display: grid;
       gap: 15px;
 
@@ -128,18 +128,25 @@
         width: 40%;
         padding: 0 5px;
       }
+      @include tablet {
+        width: 118px;
+        }
       
       & .chart:nth-child(1) circle {
         stroke: $color_html;
+        stroke-dashoffset: 40;
       }
       & .chart:nth-child(2) circle {
         stroke: $color_css;
+        stroke-dashoffset: 40;
       }
       & .chart:nth-child(3) circle {
         stroke: $color_sass;
+        stroke-dashoffset: 120;
       }
       & .chart:nth-child(4) circle {
         stroke: $color_javascript;
+        stroke-dashoffset: 160;
       }
     }
     
@@ -154,7 +161,7 @@
       }
       
       & .chart_text {
-        margin: 20px;
+        margin: 20px 10px;
         line-height: 30px;
 
         @include mobile {
@@ -195,7 +202,7 @@
       }
     }
     & .charts_inner2 {
-      width: 17%;
+      width: 184px;
       display: grid;
       gap: 15px;
 
@@ -203,15 +210,21 @@
         width: 40%;
         padding: 0 10px;
       }
+      @include tablet {
+      width: 118px;
+      }
       
       & .chart:nth-child(1) circle {
         stroke: $color_figma;
+        stroke-dashoffset: 80;
       }
       & .chart:nth-child(2) circle {
         stroke: $color_react;
+        stroke-dashoffset: 280;
       }
       & .chart:nth-child(3) circle {
         stroke: $color_github;
+        stroke-dashoffset: 120;
       }
     }
     .chart_bin {
