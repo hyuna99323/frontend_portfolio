@@ -51,7 +51,7 @@
       color: $color_point_blue;
 
       @include mobile {
-        font-size: 18px;
+        font-size: 16px;
       }
       @include tablet {
         font-size: map-get($map: $font_size_m, $key: pointContent2);
