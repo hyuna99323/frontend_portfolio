@@ -20,10 +20,6 @@
   & .project_inner {
     display: flex;
     flex-wrap: wrap;
-
-    // @include mobile {
-    //   display: none;
-    // }
     
     & .project_text {
       width: 56%;
@@ -42,16 +38,11 @@
         // opacity: 0;
         transition: all 0.5s;
       }
-      &.visible {
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 0.5s;
-      }
-      
       & p {
         width: 100%;
         height: auto;
       }
+      // 프로젝트 제목
       :nth-child(1) {
         font-size: map-get($map: $font_size, $key: pointtitle);
         font-weight: $font_weight_bold;
@@ -67,6 +58,7 @@
           font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
         }
       }
+      // 해시태그 특징
       :nth-child(2) {
         line-height: 24px;
         font-size: map-get($map: $font_size, $key: content1);
@@ -83,6 +75,7 @@
           font-size: map-get($map: $font_size_pcFull, $key: content1);
         }
       }
+      // 프로젝트 설명
       :nth-child(3) {
         margin-top: 15px;
         font-size: map-get($map: $font_size, $key: content1);
@@ -100,6 +93,7 @@
         }
       }
     }
+    // 프로젝트 이동 버튼
     & button {
       width: 86px;
       height: 30px;
@@ -132,6 +126,8 @@
       }
     }
   }
+
+  // 오늘의집
   & .ohou {
     @include project_flex;
     margin-top: 0;
@@ -149,6 +145,7 @@
       height: 40vh;
     }
     
+    // 오늘의집 프로젝트 이미지
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 1));
@@ -165,13 +162,10 @@
         text-align: center;
         transition: all 1s;
       }
-      &.visible {
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 1s;
-      }
     }
   }
+
+  // 이디야 프로젝트
   & .ediya {
     @include project_flex;
 
@@ -189,6 +183,7 @@
       height: 40vh;
     }
     
+    // 이디야 프로젝트 이미지
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 2));
@@ -205,13 +200,10 @@
         text-align: center;
         transition: all 1s;
       }
-      &.visible {
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 1s;
-      }
     }
   }
+
+  // 첫번째 포트폴리오
   & .portfolio1 {
     @include project_flex;
 
@@ -229,6 +221,7 @@
       height: 40vh;
     }
     
+    // 첫번째 포트폴리오 이미지
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 3));
@@ -245,13 +238,10 @@
         text-align: center;
         transition: all 1s;
       }
-      &.visible {
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 1s;
-      }
     }
   }
+
+  // 인터렉티브 러닝
   & .interactive {
     display: none !important;
     @include project_flex;
@@ -270,6 +260,7 @@
       height: 40vh;
     }
     
+    // 인터렉티브 러닝 이미지
     & .device_img {
       width: 27.756%;
       height: 100%;
@@ -289,13 +280,10 @@
         text-align: center;
         transition: all 1s;
       }
-      &.visible {
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 1s;
-      }
     }
   }
+
+  // 두번째 포트폴리오
   & .portfolio2 {
     @include project_flex;
 
@@ -313,6 +301,7 @@
       height: 40vh;
     }
     
+    // 두번째 포트폴리오 이미지
     & .device_img {
       @include device_img;
       @include img(nth($projectImg, 5));
@@ -327,11 +316,6 @@
       &.project {
         // opacity: 0;
         text-align: center;
-        transition: all 1s;
-      }
-      &.visible {
-        opacity: 1;
-        transform: translateX(0);
         transition: all 1s;
       }
     }

@@ -4,6 +4,7 @@ export default function Navigation() {
   return (
       <nav class="unb">
         <h2 class="blind">user navigation</h2>
+        {/* hamburger icon */}
         <input type="checkbox" id="check_box" />
         <label for="check_box">
           <span></span>
@@ -16,37 +17,37 @@ export default function Navigation() {
             {/* <!-- home --> */}
             <input type="checkbox" id="slide_btn01" />
             <label for="slide_btn01">
-              <a href="../html/portfolio2.html">home</a>
+              <a href="#homeBox">home</a>
             </label>
             {/* <!-- about --> */}
             <input type="checkbox" id="slide_btn02" />
             <label for="slide_btn02">
-              <a href="#about">about</a>
+              <a href="#aboutBox">about</a>
             </label>
             {/* <!-- advantage --> */}
             <input type="checkbox" id="slide_btn03" />
             <label for="slide_btn03">
-              <a href="#advantage">advantage</a>
+              <a href="#advantageBox">advantage</a>
             </label>
             {/* <!-- skill --> */}
             <input type="checkbox" id="slide_btn04" />
             <label for="slide_btn04">
-              <a href="#skill">skill</a>
+              <a href="#skillBox">skill</a>
             </label>
             {/* <!-- project --> */}
             <input type="checkbox" id="slide_btn05" />
             <label for="slide_btn05">
-              <a href="#project">project</a>
+              <a href="#projectBox">project</a>
             </label>
             {/* <!-- clone --> */}
             <input type="checkbox" id="slide_btn06" />
             <label for="slide_btn06">
-              <a href="#clone">clone</a>
+              <a href="#cloneBox">clone</a>
             </label>
             {/* <!-- contact --> */}
             <input type="checkbox" id="slide_btn07" />
             <label for="slide_btn07">
-              <a href="#contact">contact</a>
+              <a href="#contactBox">contact</a>
             </label>
           </div>
         </div>

@@ -6,6 +6,7 @@ export default function AboutBox() {
       <h3>about</h3>
       <div class="about_inner">
         <div class="about_left">
+          {/* 짧은 한줄 소개 */}
           <div class="aspiration">
             <p>오늘보다 현명하고 아름다운 내일을 추구하는
               프론트엔드 개발자 오현아입니다&#46;</p>
@@ -21,12 +22,14 @@ export default function AboutBox() {
         </div>
         <div class="about_right">
           <div class="about_right_inner">
+            {/* 정보 */}
             <div class="name">
               <p>name <span>오현아</span></p>
               <p>birth date <span>1999&#46;03&#46;23</span></p>
               <p>phone number <span>010&#46;6481&#46;5231</span></p>
               <p>e&#45;mail <span>gusdk99323&#64;gmail&#46;com</span></p>
             </div>
+            {/* 학력 */}
             <div class="eduction">
               <span>education</span>
               <p>2021&#46; 02 대림대학교 비서사무행정과 졸업</p>
@@ -36,9 +39,13 @@ export default function AboutBox() {
               <p>2021&#46; 05 &#45; 2022&#46; 08 &#40;주&#41; 이지놈 인턴</p>
             </div>
           </div>
+          {/* 각종 관련 사이트 이동 버튼 */}
           <div class="about_button">
+            {/* 이력서 다운로드 */}
             <a href="../download/publisher_ohhyuna.pdf" download="&#91;프론트엔드개발자&#93;자기소개서_오현아">이력서</a>
+            {/* git 이동 */}
             <a href="https://github.com/hyuna99323">github</a>
+            {/* 노션 포트폴리오 이동 */}
             <a href="https://www.notion.so/Oh-Hyuna-a4fcd0435ef64866984947b012ee0d34?pvs=4">Notion</a>
           </div>
         </div>

@@ -1,3 +1,6 @@
+// advantage
+/* advantage */
+
 @import "../variable";
 @import "../mixin";
 
@@ -20,7 +23,8 @@
         width: 100%;
         margin: auto;
       }
-      
+
+      /* 소제목 */
       & h3 {
         margin-top: 20px;
         margin-right: 60px;
@@ -42,15 +46,15 @@
           font-size: map-get($map: $font_size_pcFull, $key: title);
         }
       }
-      
+        
+      /* 왼쪽 하단 이미지 */
       & .advantage_3d {
         width: 44.804%;
         height: 47.15%;
         margin: 150px;
 
-
         @include mobile {
-          display: none;
+          display: none; /* 모바일 화면에서는 안보임 */
         }
         @include tablet {
           margin: 190px 90px;
@@ -70,10 +74,13 @@
       @include mobile {
         width: 100%;
       }
-      
+        
+      /* 내용 */
       & .Aright_inner {
         margin-top: 20px;
         text-align: left;
+
+        /* 제목 */
         & p {
           font-size: map-get($map: $font_size, $key: pointtitle);
           font-weight: $font_weight_bold;
@@ -89,6 +96,8 @@
             font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
           }
         }
+
+        /* 내용 */
         & span {
           font-size: map-get($map: $font_size, $key: content1);
           font-weight: $font_weight_thin;
@@ -106,6 +115,8 @@
         }
       }
     }
+
+    /* 중간 경계선 */
     &::before {
       content: '';
       border: $line1;

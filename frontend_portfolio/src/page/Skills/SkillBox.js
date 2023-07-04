@@ -6,18 +6,17 @@ export default function SkillBox() {
     <section id="skillBox">
       <h3>skill</h3>
       <div class="charts">
-        {/* left chart */}
         <div class="charts_inner1">
+          
+          {/* html chart */}
           <div class="chart_inner">
             <div class="chart">
-              {/* html chart */}
               <svg class="svg_img" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
               <h4 data-num="90">90</h4>
               <svg>
                 <circle class="chart_html" r="auto"></circle>
               </svg>
             </div>
-            
             {/* html text */}
             <div class="chart_text">
               <p>html</p>
@@ -25,6 +24,7 @@ export default function SkillBox() {
               <p>웹표준 준수</p>
             </div>
           </div>
+
           {/* css chart */}
           <div class="chart_inner">
             <div class="chart">
@@ -41,6 +41,7 @@ export default function SkillBox() {
               <p>flexBox를 이용한 레이아웃 제작</p>
             </div>
           </div>
+
           {/* sass chart */}
           <div class="chart_inner">
             <div class="chart">
@@ -57,6 +58,7 @@ export default function SkillBox() {
               <p>반응형 제작 시 다양하게 활용</p>
             </div>
           </div>
+
           {/* javascript chart */}
           <div class="chart_inner">
             <div class="chart">
@@ -74,7 +76,9 @@ export default function SkillBox() {
             </div>
           </div>
         </div>
+
         <div class="charts_inner2">
+
           {/* figma chart */}
           <div class="chart_inner">
             <div class="chart">
@@ -84,12 +88,14 @@ export default function SkillBox() {
                 <circle class="chart_figma" r="auto"></circle>
               </svg>
             </div>
+            {/* figma text */}
             <div class="chart_text">
               <p>figma</p>
               <p>Columns를 활용한 레이아웃 제작</p>
               <p>웹libraries 사용한 style 설정</p>
             </div>
           </div>
+
           {/* react chart */}
           <div class="chart_inner">
             <div class="chart">
@@ -106,6 +112,7 @@ export default function SkillBox() {
               <p>bulid까지 가능</p>
             </div>
           </div>
+
           {/* git chart */}
           <div class="chart_inner">
             <div class="chart">
@@ -115,6 +122,7 @@ export default function SkillBox() {
                 <circle class="chart_git" r="auto"></circle>
               </svg>
             </div>
+            {/* git text */}
             <div class="chart_text">
               <p>git</p>
               <p>협업 브런치 기본 지식 파악</p>
@@ -124,6 +132,7 @@ export default function SkillBox() {
           {/* 빈 박스 */}
           <div class="chart_inner">
             <div class="chart_bin"></div>
+            {/* 빈박스 text */}
             <div class="chart_text_bin">
               <p></p>
               <p></p>

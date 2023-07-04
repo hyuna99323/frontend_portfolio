@@ -13,6 +13,8 @@ export default function ContactBox() {
           <li>감사합니다 &#58;&#41;</li>
         </ul>
       </div>
+      
+      {/* 이메일 주소 */}
       <div class="email">
         <a href="mailto:gusdk99323&#64;gmail.com"><span class="highlight">gusdk99323&#64;gmail&#46;com</span></a>
       </div>

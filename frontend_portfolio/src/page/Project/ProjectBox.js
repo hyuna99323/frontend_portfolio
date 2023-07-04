@@ -6,6 +6,8 @@ export default function ProjectBox() {
     <section id="projectBox">
       <h3>project</h3>
       <div class="project_inner">
+        
+        {/* 오늘의집 프로젝트 */}
         <div class="ohou">
           <div class="device_img project"></div>
           <div class="project_text project">
@@ -16,6 +18,8 @@ export default function ProjectBox() {
             <button class="web_btn" onclick="ohou()">web</button>
           </div>
         </div>
+
+        {/* 이디야 프로젝트 */}
         <div class="ediya">
           <div class="device_img project"></div>
           <div class="project_text project">
@@ -26,6 +30,8 @@ export default function ProjectBox() {
             <button class="web_btn" onclick="ediya()">web</button>
           </div>
         </div>
+
+        {/* 첫번째 포트폴리오 */}
         <div class="portfolio1">
           <div class="device_img project"></div>
           <div class="project_text project">
@@ -36,6 +42,8 @@ export default function ProjectBox() {
             <button class="web_btn" onclick="portfolio1()">web</button>
           </div>
         </div>
+
+        {/* 인터렉티브 러닝 */}
         <div class="interactive">
           <div class="device_img project"></div>
           <div class="project_text project">
@@ -46,6 +54,8 @@ export default function ProjectBox() {
             <button class="web_btn" onclick="interactive()">web</button>
           </div>
         </div>
+
+        {/* 두번째 포트폴리오 */}
         <div class="portfolio2">
           <div class="device_img project"></div>
           <div class="project_text project">

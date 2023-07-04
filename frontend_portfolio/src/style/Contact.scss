@@ -1,3 +1,6 @@
+// contact
+/* contact */
+
 @import "../variable";
 @import "../mixin";
 
@@ -9,6 +12,7 @@
     padding-bottom: 110px;
   }
   
+  /* 상단 바 */
   & .email_border::after {
     content: '';
     width: 0;
@@ -20,6 +24,7 @@
     display: flex;
   }
   
+  /* 인사말 */
   & ul {
     margin-bottom: 50px;
     line-height: 35px;
@@ -40,6 +45,8 @@
       }
     }
   }
+
+  /* 이메일 주소 */
   & .email {
     margin-top: 70px;
     text-align: center;

@@ -1,3 +1,6 @@
+// skill
+/* skill */
+
 @import "../variable";
 @import "../mixin";
 
@@ -27,6 +30,7 @@
       flex-wrap: wrap;
     }
     
+    /* 그래프 */
     & .chart {
       width: 100%;
       position: relative;
@@ -35,6 +39,7 @@
         width: 100%;
       }
       
+      /* 능력치 */
       & h4 {
         font-size: map-get($map: $font_size, $key: content1);
         position: absolute;
@@ -54,6 +59,7 @@
         }
       }
       
+      /* skill 이미지 */
       & .svg_img {
         width: 64px;
         height: 64px;
@@ -74,6 +80,8 @@
           left: 35px;
         }
       }
+
+      /* skill 이미지 크기 설정 */
       & svg {
         width: 150px;
         height: 150px;
@@ -87,6 +95,7 @@
           height: 120px;
         }
         
+        /* 원형 차트 설정 */
         & circle {
           fill: #dedede;
           stroke-width: 15;
@@ -119,6 +128,7 @@
         }
       }
     }
+
     .chart_inner {
       width: 100%;
       display: flex;
@@ -133,6 +143,7 @@
         gap: 0;
       }
     }
+    
     .chart {
       width: 26.8%;
       display: flex;
@@ -148,6 +159,7 @@
         flex-wrap: wrap;
       }
     }
+    
     & .charts_inner1 {
       width: 50%;
       display: flex;
@@ -159,24 +171,29 @@
         // padding: 0 5px;
       }
       
+      /* html */
       & .chart_html {
         stroke: $color_html;
         stroke-dashoffset: 40;
       }
+      /* css */
       & .chart_css {
         stroke: $color_css;
         stroke-dashoffset: 40;
       }
+      /* sass */
       & .chart_sass {
         stroke: $color_sass;
         stroke-dashoffset: 120;
       }
+      /* javascript */
       & .chart_javascript {
         stroke: $color_javascript;
         stroke-dashoffset: 160;
       }
     }
     
+    /* 능력치 설명 */
     & .chart_text {
       width: 70.5%;
       text-align-last: left;
@@ -211,6 +228,8 @@
           font-size: map-get($map: $font_size_pcFull, $key: content1);
         }
       }
+
+      /* 각 skill 제목 */
       & p:nth-child(1) {
         font-size: map-get($map: $font_size, $key: pointtitle);
         font-weight: $font_weight_normal;
@@ -228,6 +247,7 @@
         }
       }
     }
+
     & .charts_inner2 {
       width: 50%;
       display: flex;
@@ -240,19 +260,24 @@
         // padding: 0 5px;
       }
 
+      /* figma */
       & .chart_figma {
         stroke: $color_figma;
         stroke-dashoffset: 80;
       }
+      /* react */
       & .chart_react {
         stroke: $color_react;
         stroke-dashoffset: 280;
       }
+      /* git */
       & .chart_git {
         stroke: $color_github;
         stroke-dashoffset: 120;
       }
     }
+
+    /* 빈박스 */
     .chart_bin {
       width: 78.95%;
       height: 150px;

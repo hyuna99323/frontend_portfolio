@@ -1,3 +1,6 @@
+// home
+/* #home */
+
 @import "../variable";
 @import "../mixin";
 
@@ -17,6 +20,7 @@
     padding: 83px 0 100px 0;
   }
   
+  /* 이름 */
   & h2 {
     font-size: map-get($map: $font_size, $key: pointtitle);
     font-weight: $font_weight_normal;
@@ -34,6 +38,8 @@
       font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
     }
   }
+
+  /* 인물사진 */
   & img {
     display: block;
     margin: auto;
@@ -43,6 +49,8 @@
       width: 49%;
     }
   }
+
+  /* 한줄소개 */
   & p {
     font-size: map-get($map: $font_size, $key: pointtitle);
     font-weight: $font_weight_normal;
@@ -59,6 +67,7 @@
       font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
     }
     
+    /* 강조컬러 */
     span {
       color: $color_point_blue;
     }

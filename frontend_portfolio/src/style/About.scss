@@ -1,3 +1,6 @@
+// about
+/* about */
+
 @import "../variable";
 @import "../mixin";
 
@@ -42,6 +45,7 @@
       margin-right: 6%;
     }
     
+    /* 한줄소개 */
     & .aspiration {
       width: 100%;
       height: auto;
@@ -67,6 +71,8 @@
         }
       }
     }
+
+    /* 자기소개 */
     & .introduce {
       width: 100%;
     }
@@ -108,10 +114,12 @@
       margin-top: 41px;
     }
     
+    /* 이름 기본 소개 */
     & .name {
       width: 100%;
       height: auto;
-      
+
+      /* 강조제목 */
       & p {
         font-size: map-get($map: $font_size, $key: content1);
         font-weight: $font_weight_bold;
@@ -124,7 +132,8 @@
         @include pcfull {
           font-size: map-get($map: $font_size_pcFull, $key: content1);
         }
-      
+
+      /* 내용 */
       & span {
         font-size: map-get($map: $font_size, $key: content1);
         font-weight: $font_weight_thin;
@@ -143,6 +152,7 @@
     }
   }
   
+  /* 학력 */
   & .eduction {
     width: 100%;
     height: auto;
@@ -155,6 +165,7 @@
       margin-top: 0;
     }
     
+    /* 소제목 */
     & span {
       font-size: map-get($map: $font_size, $key: pointtitle);
       font-weight: $font_weight_bold;
@@ -172,6 +183,8 @@
         font-size: map-get($map: $font_size_pcFull, $key: pointtitle);
       }
     }
+
+    /* 내용 */
     & p {
       font-size: map-get($map: $font_size, $key: content1);
       font-weight: $font_weight_thin;
@@ -190,6 +203,8 @@
     }
   }
 }
+
+/* 각종 관련 사이트 이동 버튼 */
 & .about_button {
   width: 100%;
   height: 35px;
@@ -207,6 +222,7 @@
     margin-top: 0;
   }
   
+  /* 이력서 다운로드 버튼 */
   & a:nth-child(1) {
     width: 30%;
     height: 100%;
@@ -231,6 +247,7 @@
       font-size: map-get($map: $font_size_pcFull, $key: content1);
     }
     
+    /* 마우스 오버 시 */        
     &:hover {
       width: 29.1%;
       height: 31px;
@@ -241,6 +258,7 @@
     }
   }
   
+  /* git 이동 버튼 */
   & a:nth-child(2) {
     width: 30%;
     height: 100%;
@@ -264,6 +282,7 @@
       font-size: map-get($map: $font_size_pcFull, $key: content1);
     }
     
+    /* 마우스 오버 시 */
     &:hover {
       width: 29.1%;
       height: 31px;
@@ -274,6 +293,7 @@
     }
   }
 
+  /* 노션 포트폴리오 이동 버튼 */
   & a:nth-child(3) {
     width: 30%;
     height: 100%;
@@ -296,6 +316,7 @@
       font-size: map-get($map: $font_size_pcFull, $key: content1);
     }
     
+    /* 마우스 오버 시 */
     &:hover {
       width: 29.1%;
       height: 31px;

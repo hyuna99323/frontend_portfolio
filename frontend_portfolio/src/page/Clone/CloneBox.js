@@ -5,6 +5,8 @@ export default function CloneBox() {
     <section id="cloneBox">
       <h3>clone</h3>
       <div class="clone_inner">
+        
+        {/* 쿠팡 */}
         <div class="clone_item">
           <div class="coupang clone">
             <a href="https://hyuna99323.github.io/clone_coupang/html/01_coupang_clone.html">
@@ -14,6 +16,8 @@ export default function CloneBox() {
           <p>로그인 페이지</p>
           <span>쿠팡</span>
         </div>
+
+        {/* 네이버 */}
         <div class="clone_item">
           <div class="naver clone">
             <a href="https://hyuna99323.github.io/clone_naver/html/01_naver_clone.html">
@@ -23,6 +27,8 @@ export default function CloneBox() {
           <p>회원가입 페이지</p>
           <span>네이버</span>
         </div>
+
+        {/* 구글 */}
         <div class="clone_item">
           <div class="google clone">
             <a href="https://hyuna99323.github.io/clone_google/html/01_google_clone.html">
@@ -32,6 +38,8 @@ export default function CloneBox() {
           <p>로그인 페이지</p>
           <span>구글</span>
         </div>
+
+        {/* 스포티파이 */}
         <div class="clone_item">
           <div class="spotify clone">
             <a href="https://hyuna99323.github.io/clone_spotify/html/01_spotify_clone.html">
